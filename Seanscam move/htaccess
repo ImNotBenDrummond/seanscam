@@ -1,9 +1,0 @@
-RewriteEngine On 
-RewriteCond %{HTTPS} off 
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-DirectoryIndex index.php index.html index.htm index2.html
-
-ErrorDocument 403 https://seanscam.ga/uhoh/403/403.html
-ErrorDocument 404 https://seanscam.ga/uhoh/404/404.html
-ErrorDocument 500 https://errors.infinityfree.net/errors/500/
