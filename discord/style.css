@@ -47,6 +47,7 @@ html, body{
     border: none;
     padding: 2.5%;
     margin-top: 10%;
+    cursor: pointer;
 }
 
 #bs{
