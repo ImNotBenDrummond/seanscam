@@ -48,16 +48,21 @@ body, html{
     
 }
 #button{
+
+}
+        
+buttondisabled{
+    cursor: not-allowed;
     height: 100%;
     width: 10%;
     color: #fff;
     background-color: transparent;
     border: none;
-    cursor: pointer;
     float: left;
     font-size: 150%;
     transition: 0.3s;
-}
+     }
+        
 #button:hover{
     background-color: white;
     color: black;
@@ -118,7 +123,7 @@ body, html{
 
 
                 <form method="get" action="/seanbuy.html">
-                    <button id="button" type="submit" disabled>Buy</button>
+                    <button id="button" type="submit">Buy</button>
                 </form>
 
                 <form method="get" action="https://seanscam.ga/news">
@@ -127,7 +132,7 @@ body, html{
 
 
                 <form method="get" action="https://seanscam.ga/discord">
-                    <button id="button" type="submit" disabled style=¨cursor: not-allowed;¨>Discord</button>
+                    <button id="buttondisabled" type="submit">Discord</button>
                 </form>
 
                 <img src="assets/images/important/ssgalogo.png" id="logoimg" />
