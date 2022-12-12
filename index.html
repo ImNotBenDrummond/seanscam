@@ -12,6 +12,8 @@
     </head>
     <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 body, html{
 
     background-color: #212121;
@@ -167,19 +169,20 @@ body, html{
                     <button id="button" type="submit">Discord</button>
                 </form>
 
+                <img src="https://seanscam.ga/assets/images/important/logo/christmaslogo.png" id="logoimg" onclick="location.href='https://seanscam.ga/shhh';" />
 
+                    	  <center>
+                            <div style="; width: 14%;">
+                                <h1 style="float: left; margin-top: 10%;">🎄</h1><h1 id="demo" style="color:#fff; float: right; margin-top: 11%; "></h1>
+                            </div>
+                        </center>
                 
                 
-                <img src="assets/images/important/logo/christmaslogo.png" id="logoimg" onclick="location.href='https://seanscam.ga/shhh';" />
+                
             </div>
         
    
-        <!--
-            <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-         <strong>Notice!</strong> Discord button is temporarily disabled for maintenance.
-        </div>
-        -->
+
         
 
             <a href="https://seanscam.ga/social/">
@@ -194,6 +197,41 @@ body, html{
                 <form method="get" action="https://seanscam.ga/secretcenter">
                 <button id="button-se" type="submit">⠀</button>
                 </form>
+
+
+
+
+
+                    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
     </body>
 </html>
  
